@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#stage {
+    display: none;
+    position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 80%;
+    height: 400px;
+}
+
+#player {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background-color: rgb(255, 0, 0);
+    width: 10px;
+    height: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    min-height: 100%;
+    margin: 0;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.dSoldier {
+    width: 700px;
+    text-align: center;
+    color: white;
+    height: 900px;
+    background-color: rgb(24, 26, 145);
+    margin: 0;
+}
+.dScout {
+    width: 700px;
+    text-align: center;
+    color: white;
+    height: 900px;
+    background-color: rgb(155,28,26);
+    margin: 0;
+}
+
+
+button {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(34, 35, 36);
+    color: aliceblue;
+    font-size: 200%;
+    font-weight: 900;
+}
+button:hover {
+    background-color: rgb(2, 2, 2);
+}
+
+
+
+#player-stats-table {
+    border: thick solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+#computer-stats-table {
+    border: thick solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+th, td {
+    border: thin solid black;
+    padding: 8px;
+    width: 50%;
+}
+.player-stats-table {
+    display: flex;
+    align-self: center;
+   text-align: center;
+   margin: 0;
+}
+#player-stats, #computer-stats {
+    width: 80%;
+    font-size: 20px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.options {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    overflow: scroll;
+}
+#finisher {
+    display: none;
+    margin-left: 180px;
+}
+#player-log, #computer-log {
+    height: 300px;
+    overflow-y: auto;
+    background-color: rgb(77, 77, 77);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 20px;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border: solid black;
+}

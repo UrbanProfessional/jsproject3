@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innocent Gear</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body onload="init()">
+    <div id="stage">
+        <div id="player"></div>
+    </div>
+
+    <div class="wrapper">
+        <div class="dSoldier">
+            <h1>Soldier</h1>
+            <img src="images/soldier.png" alt="soldier">
+            <div id="player-stats">
+                <table id="player-stats-table">
+                    <tr>
+                        <th>Spawn</th>
+                        <th>Live</th>
+                    </tr>
+                    <tr>
+                        <th id="oStrengthP"></th>
+                        <th id="cStrengthP"></th>
+                    </tr>
+                    <tr>
+                        <th id="oSpeedP"></th>
+                        <th id="cSpeedP"></th>
+                    </tr>
+                    <tr>
+                        <th id="oCunningP"></th>
+                        <th id="cCunningP"></th>
+                    </tr>
+                    <tr>
+                        <th id="oFatigueP"></th>
+                        <th id="cFatigueP"></th>
+                    </tr>
+                </table>
+            </div>
+            <div id="player-log">
+                <!-- <p id="player-log-info"></p> -->
+            </div>
+            
+            <div class="options">
+                <button onclick="playerAttacks()" id="fight">Attack</button>
+                <button onclick="playerDefends()" id="defend">Defend</button>
+                <button onclick="finisher()" id="finisher">Finishing Move</button>
+            </div>
+        </div>
+        
+
+        <div class="dScout">
+            <h1>Scout</h1>
+            <img src="images/scout.jpeg" alt="scout">
+            <div id="computer-stats">
+                <table id="computer-stats-table">
+                    <tr>
+                        <th>Spawn</th>
+                        <th>Live</th>
+                    </tr>
+                    <tr>
+                        <th id="oStrengthC"></th>
+                        <th id="cStrengthC"></th>
+                    </tr>
+                    <tr>
+                        <th id="oSpeedC"></th>
+                        <th id="cSpeedC"></th>
+                    </tr>
+                    <tr>
+                        <th id="oCunningC"></th>
+                        <th id="cCunningC"></th>
+                    </tr>
+                    <tr>
+                        <th id="oFatigueC"></th>
+                        <th id="cFatigueC"></th>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div id="computer-log">
+            </div>
+            
+        </div>
+    </div>
+    
+
+</body>
+</html>
